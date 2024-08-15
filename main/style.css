@@ -1,0 +1,94 @@
+/* Esta regla establece la fuente y el margen para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado para permitir el scroll */
+    height: 100%;
+    min-height: 100vh;
+    overflow-y: auto; /* Agregado para permitir el scroll */
+    background-color: #f1f1f1; /* Fondo claro para diferenciar del contenido */
+}
+
+
+/* Comentar el siguiente codigo */
+#content {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 20px; /* Espacio superior para mejor visualización */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar el contenido */
+}
+
+/* 
+Esta regla establece que los elementos <input> y <textarea>
+tendrán un ancho del 100% de su contenedor y un margen inferior de 10 píxeles.
+*/
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+/* Esta regla aplica un margen derecho de 10 píxeles a todos los botones */        
+button {
+    margin-right: 10px;
+    /* Comentar el siguiente codigo */
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
+
+/* Aplica un margen inferior de 20 píxeles a todos los elementos con la clase "prompt-entry" */
+.prompt-entry {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco para destacar cada entrada */
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Comentar el siguiente codigo */
+
+@media (min-width: 600px) {
+    input, textarea {
+        width: 50%;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    input, textarea {
+        width: 100%;
+    }
+
+    button {
+        padding: 10px 25px;
+    }
+}
