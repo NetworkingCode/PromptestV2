@@ -1,4 +1,5 @@
 Aplicación de Almacenamiento de Prompts
+
 Una aplicación web simple que almacena prompts generados por los usuarios, utilizando HTML, CSS, JavaScript y Firestore de Firebase como base de datos.
 
 Estado del Proyecto
